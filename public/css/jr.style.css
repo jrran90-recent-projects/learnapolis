@@ -1,0 +1,547 @@
+/*
+jrran90
+*/
+
+/*=================================
+		General Structure
+=================================*/
+body{ overflow-y: scroll; background: #eee; }
+
+.container-960 { width: 960px }
+.mainProfile {
+	background: #fff;
+	padding: 35px 15px;
+	margin-top: -20px;
+	border:1px solid #ccc;
+}
+
+
+/*
+=============================================
+	Dashboard
+=============================================
+*/
+
+/*custom container*/
+.contCustomParent {	margin-bottom: 10px }
+.contCustomParent:last-child { margin: 0 }
+.contCustom {
+	border:1px solid #ddd;
+}
+.contCustom textarea {
+	resize: none; /* Textarea resize attribute set to none */
+}
+.contCustom .nav>li>a:hover,
+.contCustom .nav>li>a:focus {
+	/*background: red;*/
+}
+.contCustom .nav-tabs {
+	border-bottom: 3px solid #fb4;
+}
+.contCustom .nav-tabs>li {
+	margin-bottom: -3px;
+}
+.contCustom .nav-tabs>li>a{
+	border: 0;
+	border-radius: 0;
+	color: #888;
+}
+.contCustom .nav-tabs>li.active>a{
+	border-right: 1px solid #ddd;
+	/*border-left: 1px solid #ddd;*/
+	color: #f63;
+}
+.contCustom .nav-tabs>li.active>a:hover {
+	border: 0;
+}
+.contCustom .tab-content {
+	background: #fff;
+}
+.contCustom .tab-pane {
+	/*padding: 20px 10px 10px 20px;*/
+	padding: 20px 10px;
+	/*border: 1px solid red;*/
+}
+.contCustom .tab-pane form > div {
+	overflow: hidden;
+}
+.contCustom .tab-pane form .action {
+	margin-top: 10px;	
+}
+.contCustom .tab-pane form input[type="submit"] {
+	width: 100px; float:right;
+	background: #f63; color: #fff; border: 1px solid #E04E1E;
+}
+
+/*
+| Post
+*/
+.contCustom .nav-pills>li.active>a {
+	background: #fff;
+	color: #f63; font-weight: bold;
+}
+.contCustom .nav-pills>li>a {
+	border-radius: 0;
+	color: #888;
+}
+#post_tab_option .contCustom {
+	background: #fff;
+	padding: 10px;
+}
+
+/*Post Tab Option*/
+#post_tab_option .user-img {
+	background:#f63;
+	display:inline-block;
+	color:#fff;
+	padding: 5px 10px;
+	margin-right: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#post_tab_option .rightPost {
+	width: 520px;
+}
+#post_tab_option .rightPost > a {
+	color: #d7983e;
+}
+#post_tab_option .rightPost > a:hover {
+	text-decoration: none;
+}
+#post_tab_option .rightPost .post-option{
+	margin-top: 18px;
+	font-size: 13px;
+}
+#post_tab_option .rightPost .post-option li:first-child{
+	padding-left: 0;
+}
+
+
+/*Post Comments*/
+.rightPost form.frm_cmt {
+	background: #f3f5f6;
+	padding: 10px;
+}
+.rightPost ul.lst_cmt li {
+	background: #f3f5f6;
+	padding: 5px 10px;
+	margin-top: 1px;
+	font-size: 12px;
+}
+.rightPost ul.lst_cmt span {
+	color: #9197a3;
+}
+.rightPost ul.lst_cmt p {
+	margin: 0;
+}
+
+
+/*Reset Style*/
+.remove-padding{ padding: 0 }
+
+.navbar-toggle{ border-color: #000 !important }
+.icon-bar-white { background: #000 !important }
+
+/*Body padding required
+The fixed navbar will overlay your other content*/
+.body-adjust-nav { padding-top: 70px; }
+
+.rows{ overflow: hidden }
+
+.wrap-content{
+	padding: 18px 15px;
+	border: 1px solid #ccc;
+	background: #fff;
+
+	/*border radius*/
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	/*box shadow*/
+	-webkit-box-shadow: 0 0 7px #ccc;
+	-moz-box-shadow: 0 0 7px #ccc;
+	box-shadow: 0 0 7px #ccc;
+}
+
+.messageHolder{ margin-bottom: 0; margin-top: 20px }
+.modal-footer > span{ margin-right: 10px }
+
+/*=================================
+			Login
+=================================*/
+#wrap_login{
+	width: 400px;
+	margin: 40px auto 0;
+}
+#wrap_login header{
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+/*=================================
+		Registration
+=================================*/
+#wrap_registration{
+	width: 400px;
+	margin: 20px auto 0;
+}
+#wrap_registration header{
+	text-align: center;
+}
+
+
+
+/*=================================
+		Dashboard
+=================================*/
+.lp-navbar {
+	background: #fb4;
+	border-bottom: 3px solid #d7983e;
+}
+.lp-navbar .navbar-nav > li > a{ color: #000 }
+
+
+#sideNav{ margin-top:15px }
+.nav_container{ margin-bottom: 20px }
+
+.nav_container > .navList li > span{
+	float: left; display: block;
+	padding: 3px; margin-right: 5px;
+	font-size: 10px;
+	background: #ccc; visibility: hidden;
+	cursor: pointer;
+}
+.nav_container > .navList li:hover > span{ visibility: visible; }
+
+/*navbar*/
+.navHeader{
+	font-size: 12px;
+	color: #999;
+}
+.navHeader > a{
+	font-weight: bold;
+	font-size: 11px;
+	float: right;
+	margin-right: 10px;
+	visibility: hidden;
+}
+
+#groupNav:hover .navHeader > a, #pageNav:hover .navHeader > a{
+	visibility: visible;
+}
+
+
+.navList > li{
+	margin-bottom: 1px;
+}
+.navList > li a{
+	display: block;
+	font-size: 12px;
+	padding: 2px 0 2px 5px;
+}
+.navList > li a:hover{
+	text-decoration: none;
+	background: #eee;
+}
+
+
+/*Main Container*/
+.mainContainer{
+	border:1px solid #ccc;	border-top:0;
+	margin-top: -20px; padding-top:20px; padding-bottom:20px;
+	background: #fff;
+}
+
+/*bookmarks i.e. groups,list,etc*/
+.list_bookmark{
+	border-top: 1px solid #f1f1f1;
+}
+.list_bookmark li a{
+	display: block;
+	padding: 8px 0;
+	border-bottom: 1px solid #f1f1f1;
+	font-size: 12px;
+}
+.list_bookmark li a.options{
+	margin-right: 10px;
+	display: none;
+}
+.list_bookmark li:hover a.options{
+	display: block;
+}
+.list_bookmark li a.options:hover{
+	color: #fb4;
+}
+
+
+/*========== Post
+==========================================================*/
+.thread_post_container .thread_post_each{
+	 display: block; position: relative;
+	 padding-top: 25px; margin-bottom: 13px;
+	 border-top: 1px solid #ddd;
+}
+.thread_post_container .thread_post_each:first-child {
+	border: 0;
+}
+.thread_post_container .thread_post_each:last-child{
+	padding-bottom: 0; margin-bottom: 0;
+}
+/*.thread_post_container .thread_post_each > .actionList {
+	position: absolute; top: 25px; right: 10px;
+	font-size: 12px;
+	display: none;
+}
+.thread_post_container .thread_post_each:hover > .actionList{
+	display: block;
+}*/
+
+.thread_post_container .thread_post_each .img-thumbnail {
+	margin-right: 10px;
+}
+.thread_post_container .thread_post_each > div {
+	width: 400px;
+}
+.thread_post_container .thread_post_each > div > a{
+	/*display: inline-block;*/
+	color: #fb4; font-weight: bold;
+	font-size: 18px;
+}
+.thread_post_each .post-comment {
+	background: #eee;
+	padding: 5px;
+}
+.thread_post_each .lst_cmt{
+	margin-bottom: -2px;
+}
+.thread_post_each .lst_cmt li{
+	font-size: 12px;
+	background: #eee;
+	margin-bottom: 2px;
+	padding: 5px;
+}
+/*-- miniprofile*/
+/*.content-miniprofile {
+ 	width:450px; height: 100px;
+ 	position: absolute; top: -95px;
+ 	border:1px solid #ccc; 	background: #eee;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 7px #ccc;
+	-moz-box-shadow: 0 0 7px #ccc;
+	box-shadow: 0 0 7px #ccc;
+	display: block;
+}
+.content-miniprofile .arrow {
+	position: absolute; left: 15px; bottom: -18px; z-index: -9999;
+	width: 30px; height: 20px;
+	border-top: 20px solid #bbb;
+	border-left: 15px solid transparent; 
+	border-right: 15px solid transparent; 
+}
+.body-miniprofile {
+	width: 320px; height: 98px;
+	margin-left: 10px;
+	padding: 10px 0;
+}
+.body-miniprofile > strong {
+	font-size: 20px;
+}
+.body-miniprofile > div {
+	margin-top: 5px;
+}*/
+
+
+
+
+
+
+/*=================================
+		Profile
+=================================*/
+#container_profile fieldset{ margin-bottom: 35px }
+#container_profile fieldset:last-child{ margin-bottom: 0 }
+#cnt_prof_educ > .container{ margin-bottom: 15px }
+#wrapConnect {
+	position: relative;
+	margin-top: 5px;
+}
+#wrapConnect > span {
+	position: absolute;	top:0;left:0;
+	width:135px;height:34px;
+}
+
+
+
+
+/*--- Messages
+----------------------------------*/
+/*reset*/
+#contListFriends .panel-body {
+	padding: 0; /*Reset*/
+}
+#contListFriends ul {
+	margin: 0; /*Reset*/
+	padding: 0 10px;
+}
+#contListFriends li {
+	border-bottom:1px solid #ddd;
+}
+#contListFriends li:last-child {
+	border: 0;
+}
+#contListFriends li a {
+	padding: 10px 0;
+	display: block;
+}
+/*#contListFriends li a:hover {
+	background: #369;
+}*/
+#contListFriends li p {
+	margin: 0; /*Reset*/
+	font-size: 12px;
+}
+
+#contWebMessenger {
+	border:1px solid #ddd;
+	background: #fff;
+	padding:0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#contWebMessenger ._header {
+	/*border-bottom:1px solid #ddd;*/
+	/*padding: 15px;*/
+	background: #fff;
+}
+#contWebMessenger ._headerLabel {
+	/*border:1px solid red;*/
+	padding: 15px;
+	border-bottom: 1px solid #ddd;	
+}
+#contWebMessenger .cnt_recipient {
+	border-bottom: 1px solid #ddd;
+	background: #FAFAFA;
+	padding: 10px 15px;
+	position: relative;
+}
+#contWebMessenger .cnt_recipient input[type="text"] {
+	border: 0; outline: 0;
+	margin-left: 15px;
+	font-size: 13px;
+	background: #fafafa;
+	color: #555;
+}
+#contWebMessenger .cnt_recipient ul {
+	position: absolute; z-index: 999;
+	margin-left: 35px;
+	width: 500px;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+#contWebMessenger .cnt_recipient ul a {
+	font-size: 12px;
+	display: block;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 5px;
+}
+#contWebMessenger .cnt_recipient ul a:hover{
+	text-decoration: none;
+}
+
+
+.messageScroller {
+	padding: 5px 15px;
+}
+.messageScroller li {
+	border-bottom: 1px solid #eee;
+	padding: 10px 0;
+}
+.messageScroller li:last-child {
+	border: 0;
+}
+.messageScroller .messageUser {
+	font-weight: bold;
+}
+.messageScroller .messageDtl {
+	margin: 0; /*Reset*/
+	padding-top: 6px;
+	font-size: 12px;
+}
+#messageBox {
+	background:#F7F7F7;
+	border-top: 1px solid #ddd;
+	height:110px; padding: 8px 50px;
+}
+#messageBox > div {
+	margin-top: 5px;
+}
+
+
+
+/*-- Notification
+-------------------------------------------------------*/
+#header-navbar-noti li {
+	border-left: 1px solid #d7983e;	
+}
+#header-navbar-noti li.dropdown > a{
+	color: #B47B1B;
+}
+#header-navbar-noti .dropdown > a .caret {
+	border-top-color: #b83;
+	border-bottom-color: #b83;
+}
+#header-navbar-noti .open > a,
+#header-navbar-noti .open > a:hover,
+#header-navbar-noti .open > a:focus {
+	background: #f2af42;
+	color: #fff;
+}
+
+
+
+
+/*-- Group
+-------------------------------------------------------*/
+/*[ Search ]*/
+.grp_memberSearch {
+	position: relative;
+}
+.grp_memberSearch > ul {
+	position: absolute; z-index: 1;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	width: 210px;
+	font-size: 12px;
+}
+.grp_memberSearch > ul a {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+.grp_memberSearch > ul a:hover {
+	text-decoration: none;
+	background: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-- Footer
+-------------------------------------------------------*/
+.container_footer{
+	font-size: 12px;
+	/*clear: both;*/
+}
